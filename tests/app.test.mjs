@@ -69,5 +69,18 @@ test('berücksichtigt Tastatur und reduzierte Bewegung', () => {
   const css = readFileSync(resolve(root, 'styles.css'), 'utf8');
   assert.match(css, /prefers-reduced-motion:\s*reduce/);
   assert.match(css, /:focus-visible/);
-}
-);
+});
+
+test('hat einen eigenen Abschlusszustand und begrenzte Live-Ausgabe', () => {
+  const source = html();
+  assert.match(source, /id="completion-screen"/);
+  assert.doesNotMatch(source, /id="reader-screen"[^>]*aria-live/);
+  assert.match(source, /id="step-announcement"[^>]*aria-live="polite"/);
+  assert.match(app(), /showCompletion/);
+});
+
+test('passt Navigation an RTL an und vermeidet starre mobile Bildhöhe', () => {
+  assert.match(app(), /\.dir === "rtl"/);
+  const css = readFileSync(resolve(root, 'styles.css'), 'utf8');
+  assert.doesNotMatch(css, /min-height:\s*410px/);
+});

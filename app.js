@@ -19,6 +19,10 @@ const nextButton = document.querySelector("#next-button");
 const languageButton = document.querySelector("#language-button");
 const routePoints = document.querySelector("#route-points");
 const imageBadge = document.querySelector("#image-badge");
+const stepAnnouncement = document.querySelector("#step-announcement");
+const completionScreen = document.querySelector("#completion-screen");
+const restartButton = document.querySelector("#restart-button");
+const completionLanguageButton = document.querySelector("#completion-language-button");
 
 let language = "de";
 let currentStep = 0;
@@ -57,6 +61,7 @@ function updateUrl() {
   const url = new URL(location.href);
   url.searchParams.set("step", String(currentStep + 1));
   url.searchParams.set("lang", language);
+  url.searchParams.delete("complete");
   history.replaceState({}, "", url);
 }
 
@@ -85,6 +90,7 @@ function render() {
   sectionLabel.textContent = ui.section;
   stepLabel.textContent = ui.step;
   stepCount.textContent = `${currentStep + 1} / ${steps.length}`;
+  stepAnnouncement.textContent = `${ui.step} ${currentStep + 1}: ${item.title}`;
   progressBar.style.width = `${((currentStep + 1) / steps.length) * 100}%`;
   renderRoute();
   languageLabel.textContent = selected.nativeName;
@@ -102,6 +108,7 @@ function openReader(selectedLanguage) {
   language = selectedLanguage;
   localStorage.setItem("mein-weg-zum-op-language", language);
   languageScreen.hidden = true;
+  completionScreen.hidden = true;
   readerScreen.hidden = false;
   render();
   title.focus({ preventScroll: true });
@@ -109,6 +116,7 @@ function openReader(selectedLanguage) {
 
 function showLanguageScreen() {
   readerScreen.hidden = true;
+  completionScreen.hidden = true;
   languageScreen.hidden = false;
   document.documentElement.lang = "de";
   document.documentElement.dir = "ltr";
@@ -117,21 +125,41 @@ function showLanguageScreen() {
   languageSearch.focus();
 }
 
+function showCompletion() {
+  readerScreen.hidden = true;
+  languageScreen.hidden = true;
+  completionScreen.hidden = false;
+  const url = new URL(location.href);
+  url.searchParams.delete("step");
+  url.searchParams.set("complete", "1");
+  history.replaceState({}, "", url);
+  restartButton.focus();
+}
+
 languageSearch.addEventListener("input", () => renderLanguages(languageSearch.value));
 previousButton.addEventListener("click", () => {
   if (currentStep > 0) { currentStep -= 1; render(); }
 });
 nextButton.addEventListener("click", () => {
   if (currentStep < 14) { currentStep += 1; render(); }
-  else { showLanguageScreen(); }
+  else { showCompletion(); }
 });
+restartButton.addEventListener("click", () => { currentStep = 0; openReader(language); });
+completionLanguageButton.addEventListener("click", showLanguageScreen);
 languageButton.addEventListener("click", showLanguageScreen);
 window.addEventListener("keydown", (event) => {
   if (readerScreen.hidden) return;
-  if (event.key === "ArrowRight" && currentStep < 14) { currentStep += 1; render(); }
-  if (event.key === "ArrowLeft" && currentStep > 0) { currentStep -= 1; render(); }
+  const selected = languages.find(({ code }) => code === language) ?? languages[0];
+  const forwardKey = selected.dir === "rtl" ? "ArrowLeft" : "ArrowRight";
+  const backKey = selected.dir === "rtl" ? "ArrowRight" : "ArrowLeft";
+  if (event.key === forwardKey && currentStep < 14) { currentStep += 1; render(); }
+  if (event.key === backKey && currentStep > 0) { currentStep -= 1; render(); }
 });
-window.addEventListener("popstate", () => { currentStep = stepFromUrl(); render(); });
+window.addEventListener("popstate", () => {
+  if (new URLSearchParams(location.search).get("complete") === "1") { showCompletion(); return; }
+  currentStep = stepFromUrl();
+  openReader(language);
+});
 
 renderLanguages();
 currentStep = stepFromUrl();
