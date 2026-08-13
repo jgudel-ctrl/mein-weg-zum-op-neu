@@ -1,0 +1,107 @@
+[
+  {
+    "step": 1,
+    "file": "step-01.webp",
+    "width": 339,
+    "height": 851,
+    "generated": true
+  },
+  {
+    "step": 2,
+    "file": "step-02.webp",
+    "width": 339,
+    "height": 851,
+    "generated": true
+  },
+  {
+    "step": 3,
+    "file": "step-03.webp",
+    "width": 339,
+    "height": 851,
+    "generated": true
+  },
+  {
+    "step": 4,
+    "file": "step-04.webp",
+    "width": 339,
+    "height": 851,
+    "generated": true
+  },
+  {
+    "step": 5,
+    "file": "step-05.webp",
+    "width": 339,
+    "height": 851,
+    "generated": true
+  },
+  {
+    "step": 6,
+    "file": "step-06.webp",
+    "width": 348,
+    "height": 828,
+    "generated": true
+  },
+  {
+    "step": 7,
+    "file": "step-07.webp",
+    "width": 348,
+    "height": 828,
+    "generated": true
+  },
+  {
+    "step": 8,
+    "file": "step-08.webp",
+    "width": 348,
+    "height": 828,
+    "generated": true
+  },
+  {
+    "step": 9,
+    "file": "step-09.webp",
+    "width": 348,
+    "height": 828,
+    "generated": true
+  },
+  {
+    "step": 10,
+    "file": "step-10.webp",
+    "width": 348,
+    "height": 828,
+    "generated": true
+  },
+  {
+    "step": 11,
+    "file": "step-11.webp",
+    "width": 368,
+    "height": 783,
+    "generated": true
+  },
+  {
+    "step": 12,
+    "file": "step-12.webp",
+    "width": 368,
+    "height": 783,
+    "generated": true
+  },
+  {
+    "step": 13,
+    "file": "step-13.webp",
+    "width": 368,
+    "height": 783,
+    "generated": true
+  },
+  {
+    "step": 14,
+    "file": "step-14.webp",
+    "width": 368,
+    "height": 783,
+    "generated": true
+  },
+  {
+    "step": 15,
+    "file": "step-15.webp",
+    "width": 368,
+    "height": 783,
+    "generated": true
+  }
+]

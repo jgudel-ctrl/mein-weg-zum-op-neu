@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-13T00:00:00Z",
+  "title": "Design System: Mein Weg zum OP",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Wegweiserblau", "canonical": "#075b8f", "tonalRamp": ["#02253c", "#043c5f", "#075b8f", "#2877a4", "#5794b8", "#8db9ce", "#c1dbe6", "#e8f2f6"] },
+      "sky": { "role": "neutral", "displayName": "Himmelblau", "canonical": "#dcecf2", "tonalRamp": ["#193039", "#31515e", "#527786", "#7e9eaa", "#a9c2cc", "#c6dae2", "#dcecf2", "#f3f9fb"] },
+      "signal": { "role": "secondary", "displayName": "Korallsignal", "canonical": "#d84b35", "tonalRamp": ["#3b100b", "#681d14", "#982d20", "#c33f2d", "#d84b35", "#e98372", "#f2b6aa", "#fbe5e1"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Schrittüberschrift", "purpose": "Ein klarer Gedanke pro Ansicht." },
+      "body": { "displayName": "Patienteninformation", "purpose": "Kurze, gut lesbare Erklärung." }
+    },
+    "shadows": [
+      { "name": "ambient", "value": "0 14px 36px rgba(20, 52, 74, .16)", "purpose": "Bildbühne und Sprachauswahl." },
+      { "name": "control", "value": "0 7px 20px rgba(7, 91, 143, .25)", "purpose": "Primäre Navigation." }
+    ],
+    "motion": [
+      { "name": "control-ease", "value": "transform .2s ease-out, box-shadow .2s ease-out", "purpose": "Kurzes, optionales Feedback für die Sprachauswahl." }
+    ],
+    "breakpoints": [
+      { "name": "two-column", "value": "820px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Navigation Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Vorwärtsnavigation mit großem Touch-Ziel.",
+      "html": "<button class=\"ds-btn-primary\">Weiter</button>",
+      "css": ".ds-btn-primary{min-height:56px;padding:12px 18px;color:#fff;background:#075b8f;border:0;border-radius:14px;font:800 16px Atkinson,Arial,sans-serif}.ds-btn-primary:hover{background:#03456e}.ds-btn-primary:focus-visible{outline:4px solid #ffbf47;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Navigation Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Rückwärtsnavigation auf weißer Fläche.",
+      "html": "<button class=\"ds-btn-secondary\">Zurück</button>",
+      "css": ".ds-btn-secondary{min-height:56px;padding:12px 18px;color:#03456e;background:#fff;border:0;border-radius:14px;font:800 16px Atkinson,Arial,sans-serif}.ds-btn-secondary:focus-visible{outline:4px solid #ffbf47;outline-offset:3px}"
+    },
+    {
+      "name": "Language Choice",
+      "kind": "custom",
+      "description": "Große, zweizeilige Sprachwahl mit eindeutigem Sprachcode.",
+      "html": "<button class=\"ds-language\"><strong>DE</strong><span>Deutsch<small>Informationen auf Deutsch</small></span></button>",
+      "css": ".ds-language{min-height:88px;width:100%;padding:14px 16px;display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:center;text-align:left;color:#14344a;background:#fff;border:0;border-radius:14px;box-shadow:0 7px 24px rgba(20,52,74,.12)}.ds-language>strong{height:52px;display:grid;place-items:center;border-radius:10px;color:#fff;background:#075b8f}.ds-language small{display:block;margin-top:4px;color:#527185}.ds-language:focus-visible{outline:4px solid #ffbf47;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Die ruhige OP-Wegweisung",
+    "overview": "Die Oberfläche übersetzt die kühle, eindeutige Bildsprache des Projektbuchs in eine stressarme mobile Führung. Große Originalabbildungen sind die inhaltliche Hauptsache; Navigation, Fortschritt und Sprache bleiben klar erkennbar, aber visuell nachgeordnet.",
+    "keyCharacteristics": ["Kühles Himmelblau als ruhige Grundfläche", "Tintenblauer Text und kräftig blaue Handlungsflächen", "Korallrot ausschließlich als Fortschritts- und Handlungssignal", "Große, bildgestützte Einzelansichten"],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Korallrot markiert Fortschritt oder Dringlichkeit; es ist keine dekorative Akzentfarbe.", "section": "colors" },
+      { "name": "The One Thought Rule", "body": "Jede Ansicht zeigt genau eine große Überschrift und eine kurze Erklärung.", "section": "typography" }
+    ],
+    "dos": ["Do die Originalabbildung als primäre Informationsquelle vollständig zeigen.", "Do je Ansicht nur einen Schritt und zwei eindeutige Navigationsaktionen anbieten.", "Do Sprache, aktuellen Schritt und Fortschritt jederzeit sichtbar halten."],
+    "donts": ["Don't klinische Zusatzinformationen erfinden oder ungeprüfte Übersetzungen als freigegeben darstellen.", "Don't mehrere PDF-Seiten gleichzeitig in einer mobilen Übersicht verkleinern.", "Don't dekorative Animationen oder visuelles Rauschen neben den Bildern einsetzen."]
+  }
+}

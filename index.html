@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Mein Weg zum OP – eine bebilderte Schritt-für-Schritt-Anleitung.">
+  <title>Mein Weg zum OP – neu illustriert</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <!--
+  THESIS: Eine fortlaufende Wegkarte macht 15 OP-Schritte zu einer verständlichen Reise statt zu einem Dokument.
+  OWN-WORLD: Kreideweißes Kartenpapier, tiefe Marinekonturen, Mintflächen, Korallroute und sonnengelbe Orientierungspunkte.
+  STORY: Sprache wählen, auf der Route den eigenen Standort erkennen, Bild und Handlung verstehen, sicher weitergehen.
+  FIRST VIEWPORT: Eine kurze Sprachfrage über einer dichten, durchsuchbaren Liste; danach füllt die Illustration den Blick und die Route bleibt seitlich ablesbar.
+  FORM: Editoriale Patienten-Wegkarte; Seed 55361a62, Kandidat 6.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <main>
+    <section id="language-screen" class="language-screen" aria-labelledby="language-title">
+      <div class="brand-lockup" aria-hidden="true">
+        <span class="brand-route"><i></i><i></i><i></i></span>
+        <span>MEIN WEG</span>
+      </div>
+      <h1 id="language-title">Welche Sprache möchten Sie?</h1>
+      <p class="language-intro">Choose your language · اختر لغتك · Оберіть мову</p>
+      <label class="language-search-label" for="language-search">Sprache suchen</label>
+      <input id="language-search" class="language-search" type="search" autocomplete="off" placeholder="Deutsch, English, العربية …">
+      <div id="language-options" class="language-options" aria-label="Sprache auswählen"></div>
+      <p id="language-empty" class="language-empty" hidden>Keine Sprache gefunden.</p>
+      <p class="privacy-note">Keine Anmeldung. Die Auswahl bleibt nur auf diesem Gerät.</p>
+    </section>
+
+    <section id="reader-screen" class="reader-screen" hidden aria-live="polite">
+      <header class="reader-header">
+        <button id="language-button" class="utility-button" type="button" aria-label="Sprache ändern">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+          <span id="language-label">Deutsch</span>
+        </button>
+        <div class="step-status"><span id="step-label">Schritt</span> <strong id="step-count">1 / 15</strong></div>
+      </header>
+
+      <div class="reader-layout">
+        <aside id="route-map" class="route-map" aria-label="Fortschritt">
+          <p class="route-caption">Ihr Weg</p>
+          <div class="route-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+          <div id="route-points" class="route-points"></div>
+        </aside>
+
+        <article class="step-view">
+          <figure class="illustration-stage">
+            <img id="step-image" src="assets/step-01.webp" alt="">
+            <figcaption><span id="image-badge">01</span></figcaption>
+          </figure>
+          <div class="step-copy">
+            <p id="section-label" class="section-label">Mein Weg zum OP</p>
+            <h1 id="step-title" tabindex="-1">Der Weg zum OP</h1>
+            <p id="step-description">Wichtige Informationen zu Ihrer Operation.</p>
+            <p id="translation-note" class="translation-note">Zusätzliche Texte müssen medizinisch freigegeben werden.</p>
+          </div>
+        </article>
+      </div>
+
+      <nav class="reader-navigation" aria-label="Schrittnavigation">
+        <button id="previous-button" class="navigation-button secondary" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></svg><span>Zurück</span>
+        </button>
+        <button id="next-button" class="navigation-button primary" type="button">
+          <span>Weiter</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>
+        </button>
+      </nav>
+    </section>
+  </main>
+  <noscript>Für diese Schritt-für-Schritt-Anleitung muss JavaScript aktiviert sein.</noscript>
+</body>
+</html>
