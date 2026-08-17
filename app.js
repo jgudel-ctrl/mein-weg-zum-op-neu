@@ -26,6 +26,7 @@ const completionLanguageButton = document.querySelector("#completion-language-bu
 
 let language = "de";
 let currentStep = 0;
+const finalStep = stepOrder.length - 1;
 
 function normalize(value) {
   return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
@@ -35,7 +36,7 @@ function renderLanguages(filter = "") {
   const query = normalize(filter.trim());
   languageOptions.replaceChildren();
   let matches = 0;
-  languages.forEach(({ code, nativeName, englishName, dir }) => {
+  languages.forEach(({ code, nativeName, englishName, dir, flag }) => {
     if (query && !normalize(`${nativeName} ${englishName} ${code}`).includes(query)) return;
     matches += 1;
     const button = document.createElement("button");
@@ -43,7 +44,8 @@ function renderLanguages(filter = "") {
     button.className = "language-choice";
     button.dataset.language = code;
     button.dir = dir;
-    button.innerHTML = `<span class="language-code" aria-hidden="true">${code.toUpperCase()}</span><span><strong></strong><small></small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>`;
+    button.innerHTML = `<span class="language-flag" aria-hidden="true"></span><span><strong></strong><small></small></span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>`;
+    button.querySelector(".language-flag").textContent = flag;
     button.querySelector("strong").textContent = nativeName;
     button.querySelector("small").textContent = englishName;
     button.addEventListener("click", () => openReader(code));
@@ -54,7 +56,7 @@ function renderLanguages(filter = "") {
 
 function stepFromUrl() {
   const value = Number(new URLSearchParams(location.search).get("step"));
-  return Number.isInteger(value) && value >= 1 && value <= 15 ? value - 1 : 0;
+  return Number.isInteger(value) && value >= 1 && value <= stepOrder.length ? value - 1 : 0;
 }
 
 function updateUrl() {
@@ -67,7 +69,7 @@ function updateUrl() {
 
 function renderRoute() {
   routePoints.replaceChildren();
-  for (let index = 0; index < 15; index += 1) {
+  for (let index = 0; index < stepOrder.length; index += 1) {
     const point = document.createElement("span");
     point.className = `route-point${index < currentStep ? " done" : ""}${index === currentStep ? " current" : ""}`;
     point.textContent = String(index + 1);
@@ -96,9 +98,9 @@ function render() {
   renderRoute();
   languageLabel.textContent = selected.nativeName;
   previousButton.querySelector("span").textContent = ui.back;
-  nextButton.querySelector("span").textContent = currentStep === 14 ? ui.finish : ui.next;
+  nextButton.querySelector("span").textContent = currentStep === finalStep ? ui.finish : ui.next;
   previousButton.disabled = currentStep === 0;
-  nextButton.classList.toggle("is-finish", currentStep === 14);
+  nextButton.classList.toggle("is-finish", currentStep === finalStep);
   translationNote.hidden = selected.code === "de";
   translationNote.textContent = ui.note;
   updateUrl();
@@ -142,7 +144,7 @@ previousButton.addEventListener("click", () => {
   if (currentStep > 0) { currentStep -= 1; render(); }
 });
 nextButton.addEventListener("click", () => {
-  if (currentStep < 14) { currentStep += 1; render(); }
+  if (currentStep < finalStep) { currentStep += 1; render(); }
   else { showCompletion(); }
 });
 restartButton.addEventListener("click", () => { currentStep = 0; openReader(language); });
@@ -153,7 +155,7 @@ window.addEventListener("keydown", (event) => {
   const selected = languages.find(({ code }) => code === language) ?? languages[0];
   const forwardKey = selected.dir === "rtl" ? "ArrowLeft" : "ArrowRight";
   const backKey = selected.dir === "rtl" ? "ArrowRight" : "ArrowLeft";
-  if (event.key === forwardKey && currentStep < 14) { currentStep += 1; render(); }
+  if (event.key === forwardKey && currentStep < finalStep) { currentStep += 1; render(); }
   if (event.key === backKey && currentStep > 0) { currentStep -= 1; render(); }
 });
 window.addEventListener("popstate", () => {

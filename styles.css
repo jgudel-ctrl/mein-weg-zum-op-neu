@@ -36,7 +36,7 @@ h1 { margin: 0; font-size: clamp(2.35rem, 9vw, 5.6rem); line-height: .94; letter
 .language-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
 .language-choice { min-height: 76px; padding: 10px 12px; display: grid; grid-template-columns: 46px 1fr 22px; align-items: center; gap: 12px; text-align: left; color: var(--ink); background: var(--white); border: 2px solid var(--ink); border-radius: 12px; transition: transform .18s ease-out, background-color .18s ease-out; }
 .language-choice:hover { transform: translateY(-2px); background: #e8f5f0; }
-.language-code { width: 46px; height: 46px; display: grid; place-items: center; color: var(--white); background: var(--teal); border-radius: 50%; font-size: .78rem; font-weight: 900; }
+.language-flag { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: #eef7f4; font-size: 2rem; line-height: 1; }
 .language-choice strong, .language-choice small { display: block; }
 .language-choice strong { font-size: 1.1rem; }
 .language-choice small { margin-top: 3px; color: var(--muted); }

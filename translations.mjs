@@ -3,253 +3,294 @@ export const languages = [
     "code": "de",
     "nativeName": "Deutsch",
     "englishName": "German",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇩🇪"
   },
   {
     "code": "en",
     "nativeName": "English",
     "englishName": "English",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇬🇧"
   },
   {
     "code": "fr",
     "nativeName": "Français",
     "englishName": "French",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇫🇷"
   },
   {
     "code": "es",
     "nativeName": "Español",
     "englishName": "Spanish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇪🇸"
   },
   {
     "code": "it",
     "nativeName": "Italiano",
     "englishName": "Italian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇮🇹"
   },
   {
     "code": "pt",
     "nativeName": "Português",
     "englishName": "Portuguese",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇵🇹"
   },
   {
     "code": "nl",
     "nativeName": "Nederlands",
     "englishName": "Dutch",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇳🇱"
   },
   {
     "code": "pl",
     "nativeName": "Polski",
     "englishName": "Polish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇵🇱"
   },
   {
     "code": "cs",
     "nativeName": "Čeština",
     "englishName": "Czech",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇨🇿"
   },
   {
     "code": "sk",
     "nativeName": "Slovenčina",
     "englishName": "Slovak",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇸🇰"
   },
   {
     "code": "sl",
     "nativeName": "Slovenščina",
     "englishName": "Slovenian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇸🇮"
   },
   {
     "code": "hr",
     "nativeName": "Hrvatski",
     "englishName": "Croatian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇭🇷"
   },
   {
     "code": "bs",
     "nativeName": "Bosanski",
     "englishName": "Bosnian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇧🇦"
   },
   {
     "code": "sr",
     "nativeName": "Српски",
     "englishName": "Serbian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇷🇸"
   },
   {
     "code": "bg",
     "nativeName": "Български",
     "englishName": "Bulgarian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇧🇬"
   },
   {
     "code": "ro",
     "nativeName": "Română",
     "englishName": "Romanian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇷🇴"
   },
   {
     "code": "hu",
     "nativeName": "Magyar",
     "englishName": "Hungarian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇭🇺"
   },
   {
     "code": "el",
     "nativeName": "Ελληνικά",
     "englishName": "Greek",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇬🇷"
   },
   {
     "code": "sv",
     "nativeName": "Svenska",
     "englishName": "Swedish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇸🇪"
   },
   {
     "code": "da",
     "nativeName": "Dansk",
     "englishName": "Danish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇩🇰"
   },
   {
     "code": "fi",
     "nativeName": "Suomi",
     "englishName": "Finnish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇫🇮"
   },
   {
     "code": "et",
     "nativeName": "Eesti",
     "englishName": "Estonian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇪🇪"
   },
   {
     "code": "lv",
     "nativeName": "Latviešu",
     "englishName": "Latvian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇱🇻"
   },
   {
     "code": "lt",
     "nativeName": "Lietuvių",
     "englishName": "Lithuanian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇱🇹"
   },
   {
     "code": "ga",
     "nativeName": "Gaeilge",
     "englishName": "Irish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇮🇪"
   },
   {
     "code": "mt",
     "nativeName": "Malti",
     "englishName": "Maltese",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇲🇹"
   },
   {
     "code": "lb",
     "nativeName": "Lëtzebuergesch",
     "englishName": "Luxembourgish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇱🇺"
   },
   {
     "code": "is",
     "nativeName": "Íslenska",
     "englishName": "Icelandic",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇮🇸"
   },
   {
     "code": "no",
     "nativeName": "Norsk",
     "englishName": "Norwegian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇳🇴"
   },
   {
     "code": "uk",
     "nativeName": "Українська",
     "englishName": "Ukrainian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇺🇦"
   },
   {
     "code": "ru",
     "nativeName": "Русский",
     "englishName": "Russian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇷🇺"
   },
   {
     "code": "tr",
     "nativeName": "Türkçe",
     "englishName": "Turkish",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇹🇷"
   },
   {
     "code": "ar",
     "nativeName": "العربية",
     "englishName": "Arabic",
-    "dir": "rtl"
+    "dir": "rtl",
+    "flag": "🇸🇦"
   },
   {
     "code": "sq",
     "nativeName": "Shqip",
     "englishName": "Albanian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇦🇱"
   },
   {
     "code": "mk",
     "nativeName": "Македонски",
     "englishName": "Macedonian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇲🇰"
   },
   {
     "code": "ka",
     "nativeName": "ქართული",
     "englishName": "Georgian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇬🇪"
   },
   {
     "code": "hy",
     "nativeName": "Հայերեն",
     "englishName": "Armenian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇦🇲"
   },
   {
     "code": "az",
     "nativeName": "Azərbaycanca",
     "englishName": "Azerbaijani",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇦🇿"
   },
   {
     "code": "be",
     "nativeName": "Беларуская",
     "englishName": "Belarusian",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇧🇾"
   },
   {
     "code": "ca",
     "nativeName": "Català",
     "englishName": "Catalan",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇪🇸"
   },
   {
     "code": "cnr",
     "nativeName": "Crnogorski",
     "englishName": "Montenegrin",
-    "dir": "ltr"
+    "dir": "ltr",
+    "flag": "🇲🇪"
   }
 ];
 
 // Display order keeps the source illustration/text index stable while moving
-// the toilet reminder before transfer into the operating room.
-export const stepOrder = [0, 1, 8, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14];
+// the toilet reminder before transfer and adding the smoking and closing pages.
+export const stepOrder = [0, 1, 8, 2, 3, 4, 5, 15, 6, 7, 9, 10, 11, 12, 13, 14, 16];
 
 export const translations = {
   "de": {
@@ -276,7 +317,7 @@ export const translations = {
       },
       {
         "title": "Umlagern auf den OP-Tisch",
-        "description": "Das OP-Team lagert Sie sicher von Ihrem Bett auf den OP-Tisch um."
+        "description": "Sie werden mit einem Gurt für den Transport im Bett gesichert. Im OP lagert das Team Sie anschließend vom Bett auf den OP-Tisch um."
       },
       {
         "title": "Abfragen",
@@ -320,11 +361,19 @@ export const translations = {
       },
       {
         "title": "Sauerstoff und Narkosebeginn",
-        "description": "Zunächst atmen Sie über die Maske Sauerstoff ein; dabei sind Sie noch wach. Danach erhalten Sie die Medikamente zum Einschlafen über die Venenverweilkanüle (Braunüle)."
+        "description": "Zunächst atmen Sie über die Maske Sauerstoff ein; dabei sind Sie noch wach. Danach erhalten Sie die Medikamente zum Einschlafen über die Venenverweilkanüle."
       },
       {
         "title": "Aufwachraum",
         "description": "Nach der Operation werden Sie im Aufwachraum überwacht."
+      },
+      {
+        "title": "Nicht rauchen",
+        "description": "Bitte rauchen Sie vor der Operation nicht."
+      },
+      {
+        "title": "Alles verstanden?",
+        "description": "Haben Sie noch Fragen oder ist etwas unklar? Bitte sprechen Sie das Stationspersonal an. Wir helfen Ihnen gerne weiter."
       }
     ]
   },
@@ -401,6 +450,14 @@ export const translations = {
       {
         "title": "recovery room",
         "description": "After the operation, you will be monitored in the recovery room."
+      },
+      {
+        "title": "Do not smoke",
+        "description": "Please do not smoke before the operation."
+      },
+      {
+        "title": "Understood everything?",
+        "description": "Do you have any questions or is something unclear? Please speak to the station staff. We will be happy to help you."
       }
     ]
   },
@@ -477,6 +534,14 @@ export const translations = {
       {
         "title": "salle de réveil",
         "description": "Après l’opération, vous serez surveillé en salle de réveil."
+      },
+      {
+        "title": "Ne fumez pas",
+        "description": "Merci de ne pas fumer avant l’opération."
+      },
+      {
+        "title": "Vous avez tout compris ?",
+        "description": "Do you have any questions or is something unclear? Veuillez en parler au personnel de la gare. Nous serons heureux de vous aider."
       }
     ]
   },
@@ -553,6 +618,14 @@ export const translations = {
       {
         "title": "sala de recuperación",
         "description": "Después de la operación, será monitoreado en la sala de recuperación."
+      },
+      {
+        "title": "no fumar",
+        "description": "Por favor no fume antes de la operación."
+      },
+      {
+        "title": "¿Entendiste todo?",
+        "description": "¿Tiene alguna pregunta o hay algo que no está claro? Por favor hable con el personal de la estación. Estaremos encantados de ayudarle."
       }
     ]
   },
@@ -629,6 +702,14 @@ export const translations = {
       {
         "title": "stanza di recupero",
         "description": "Dopo l'operazione sarai monitorato nella sala di risveglio."
+      },
+      {
+        "title": "Non fumare",
+        "description": "Si prega di non fumare prima dell'operazione."
+      },
+      {
+        "title": "Capito tutto?",
+        "description": "Hai qualche domanda o qualcosa non è chiaro? Si prega di parlare con il personale della stazione. Saremo felici di aiutarti."
       }
     ]
   },
@@ -705,6 +786,14 @@ export const translations = {
       {
         "title": "sala de recuperação",
         "description": "Após a operação, você será monitorado na sala de recuperação."
+      },
+      {
+        "title": "Não fume",
+        "description": "Por favor, não fume antes da operação."
+      },
+      {
+        "title": "Entendeu tudo?",
+        "description": "Você tem alguma dúvida ou algo não está claro? Por favor, fale com o pessoal da estação. Ficaremos felizes em ajudá-lo."
       }
     ]
   },
@@ -781,6 +870,14 @@ export const translations = {
       {
         "title": "verkoeverkamer",
         "description": "Na de operatie wordt u gecontroleerd op de uitslaapkamer."
+      },
+      {
+        "title": "Rook niet",
+        "description": "Gelieve niet te roken vóór de operatie."
+      },
+      {
+        "title": "Alles begrepen?",
+        "description": "Heeft u vragen of is er iets onduidelijk? Neem dan contact op met het stationspersoneel. Wij helpen u graag verder."
       }
     ]
   },
@@ -857,6 +954,14 @@ export const translations = {
       {
         "title": "sala pooperacyjna",
         "description": "Po operacji będziesz monitorowany na sali pooperacyjnej."
+      },
+      {
+        "title": "Nie palić",
+        "description": "Prosimy nie palić przed operacją."
+      },
+      {
+        "title": "Zrozumiałeś wszystko?",
+        "description": "Masz pytania lub coś jest niejasne? Proszę porozmawiać z obsługą stacji. Chętnie Ci pomożemy."
       }
     ]
   },
@@ -933,6 +1038,14 @@ export const translations = {
       {
         "title": "zotavovací místnost",
         "description": "Po operaci budete sledováni v zotavovací místnosti."
+      },
+      {
+        "title": "Nekuřte",
+        "description": "Před operací prosím nekuřte."
+      },
+      {
+        "title": "Rozuměl všemu?",
+        "description": "Máte nějaké dotazy nebo je něco nejasné? Promluvte si prosím s personálem stanice. Rádi vám pomůžeme."
       }
     ]
   },
@@ -1009,6 +1122,14 @@ export const translations = {
       {
         "title": "zotavovacia miestnosť",
         "description": "Po operácii vás budú sledovať v doliečovacej miestnosti."
+      },
+      {
+        "title": "Nefajčite",
+        "description": "Pred operáciou nefajčite."
+      },
+      {
+        "title": "Rozumel všetkému?",
+        "description": "Máte nejaké otázky alebo vám niečo nie je jasné? Porozprávajte sa s personálom stanice. Radi vám pomôžeme."
       }
     ]
   },
@@ -1085,6 +1206,14 @@ export const translations = {
       {
         "title": "soba za okrevanje",
         "description": "Po operaciji boste pod nadzorom v sobi za okrevanje."
+      },
+      {
+        "title": "Ne kadite",
+        "description": "Prosimo, da pred operacijo ne kadite."
+      },
+      {
+        "title": "Ste vse razumeli?",
+        "description": "Imate kakšna vprašanja ali vam kaj ni jasno? Prosim, govorite z osebjem postaje. Z veseljem vam bomo pomagali."
       }
     ]
   },
@@ -1161,6 +1290,14 @@ export const translations = {
       {
         "title": "soba za oporavak",
         "description": "Nakon operacije bit ćete pod nadzorom u sobi za oporavak."
+      },
+      {
+        "title": "Nemojte pušiti",
+        "description": "Nemojte pušiti prije operacije."
+      },
+      {
+        "title": "Jeste li sve razumjeli?",
+        "description": "Do you have any questions or is something unclear? Molimo razgovarajte s osobljem postaje. Rado ćemo vam pomoći."
       }
     ]
   },
@@ -1237,6 +1374,14 @@ export const translations = {
       {
         "title": "soba za oporavak",
         "description": "Nakon operacije bićete pod nadzorom u sobi za oporavak."
+      },
+      {
+        "title": "Ne pušite",
+        "description": "Nemojte pušiti prije operacije."
+      },
+      {
+        "title": "Sve razumeo?",
+        "description": "Imate li pitanja ili vam nešto nije jasno? Molimo razgovarajte sa osobljem stanice. Rado ćemo Vam pomoći."
       }
     ]
   },
@@ -1313,6 +1458,14 @@ export const translations = {
       {
         "title": "соба за опоравак",
         "description": "Након операције, бићете под надзором у соби за опоравак."
+      },
+      {
+        "title": "Не пушите",
+        "description": "Молимо вас да не пушите пре операције."
+      },
+      {
+        "title": "Све разумео?",
+        "description": "Имате ли питања или вам нешто није јасно? Молимо разговарајте са особљем станице. радо ћемо вам помоћи."
       }
     ]
   },
@@ -1389,6 +1542,14 @@ export const translations = {
       {
         "title": "стая за възстановяване",
         "description": "След операцията ще бъдете наблюдавани в стаята за възстановяване."
+      },
+      {
+        "title": "Не пушете",
+        "description": "Моля, не пушете преди операцията."
+      },
+      {
+        "title": "Разбра ли всичко?",
+        "description": "Do you have any questions or is something unclear? Моля, говорете с персонала на станцията. Ще се радваме да Ви помогнем."
       }
     ]
   },
@@ -1465,6 +1626,14 @@ export const translations = {
       {
         "title": "camera de recuperare",
         "description": "După operație, veți fi monitorizat în camera de recuperare."
+      },
+      {
+        "title": "Nu fumați",
+        "description": "Vă rugăm să nu fumați înainte de operație."
+      },
+      {
+        "title": "A inteles totul?",
+        "description": "Ai întrebări sau este ceva neclar? Vă rugăm să vorbiți cu personalul stației. Vom fi bucuroși să vă ajutăm."
       }
     ]
   },
@@ -1541,6 +1710,14 @@ export const translations = {
       {
         "title": "helyreállítási szoba",
         "description": "A műtét után megfigyelés alatt áll a gyógyteremben."
+      },
+      {
+        "title": "Ne dohányozzon",
+        "description": "Kérjük, ne dohányozzon a műtét előtt."
+      },
+      {
+        "title": "mindent megértett?",
+        "description": "Kérdése van, vagy valami nem világos? Kérjük, beszéljen az állomás személyzetével. Szívesen segítünk Önnek."
       }
     ]
   },
@@ -1617,6 +1794,14 @@ export const translations = {
       {
         "title": "αίθουσα ανάνηψης",
         "description": "Μετά την επέμβαση, θα παρακολουθείστε στην αίθουσα ανάνηψης."
+      },
+      {
+        "title": "Μην καπνίζετε",
+        "description": "Μην καπνίζετε πριν την επέμβαση."
+      },
+      {
+        "title": "Κατάλαβες τα πάντα;",
+        "description": "Έχετε απορίες ή είναι κάτι ασαφές; Μιλήστε με το προσωπικό του σταθμού. Θα χαρούμε να σας βοηθήσουμε."
       }
     ]
   },
@@ -1693,6 +1878,14 @@ export const translations = {
       {
         "title": "uppvakningsrum",
         "description": "Efter operationen kommer du att övervakas på uppvakningsrummet."
+      },
+      {
+        "title": "Rök inte",
+        "description": "Rök inte före operationen."
+      },
+      {
+        "title": "Förstått allt?",
+        "description": "Har du några frågor eller är något oklart? Prata med stationens personal. Vi hjälper dig gärna."
       }
     ]
   },
@@ -1769,6 +1962,14 @@ export const translations = {
       {
         "title": "opvågningsrum",
         "description": "Efter operationen vil du blive overvåget på opvågningsstuen."
+      },
+      {
+        "title": "Ryg ikke",
+        "description": "Undlad venligst at ryge før operationen."
+      },
+      {
+        "title": "Forstået alt?",
+        "description": "Har du spørgsmål eller er noget uklart? Tal venligst med stationens personale. Vi hjælper dig gerne."
       }
     ]
   },
@@ -1845,6 +2046,14 @@ export const translations = {
       {
         "title": "toipumishuone",
         "description": "Leikkauksen jälkeen sinua seurataan toipumishuoneessa."
+      },
+      {
+        "title": "Älä tupakoi",
+        "description": "Älä tupakoi ennen leikkausta."
+      },
+      {
+        "title": "Ymmärsikö kaiken?",
+        "description": "Onko sinulla kysyttävää tai onko jotain epäselvää? Ole hyvä ja keskustele aseman henkilökunnan kanssa. Autamme sinua mielellämme."
       }
     ]
   },
@@ -1921,6 +2130,14 @@ export const translations = {
       {
         "title": "taastustuba",
         "description": "Pärast operatsiooni jälgitakse teid taastusruumis."
+      },
+      {
+        "title": "Ärge suitsetage",
+        "description": "Palun ärge suitsetage enne operatsiooni."
+      },
+      {
+        "title": "Sai kõigest aru?",
+        "description": "Kas teil on küsimusi või on midagi ebaselge? Palun rääkige jaama töötajatega. Aitame teid hea meelega."
       }
     ]
   },
@@ -1997,6 +2214,14 @@ export const translations = {
       {
         "title": "atveseļošanās telpa",
         "description": "Pēc operācijas jūs novēros atveseļošanās telpā."
+      },
+      {
+        "title": "Nesmēķēt",
+        "description": "Lūdzu, nesmēķējiet pirms operācijas."
+      },
+      {
+        "title": "Visu saprati?",
+        "description": "Vai jums ir kādi jautājumi vai kaut kas nav skaidrs? Lūdzu, runājiet ar stacijas darbiniekiem. Mēs ar prieku jums palīdzēsim."
       }
     ]
   },
@@ -2073,6 +2298,14 @@ export const translations = {
       {
         "title": "reabilitacijos kambarys",
         "description": "Po operacijos būsite stebimi reabilitacijos kambaryje."
+      },
+      {
+        "title": "Nerūkyti",
+        "description": "Prieš operaciją nerūkykite."
+      },
+      {
+        "title": "Viską suprato?",
+        "description": "Turite klausimų ar kažkas neaišku? Pasikalbėkite su stoties darbuotojais. Mes mielai jums padėsime."
       }
     ]
   },
@@ -2149,6 +2382,14 @@ export const translations = {
       {
         "title": "seomra athshlánaithe",
         "description": "Tar éis na hoibríochta, déanfar monatóireacht ort sa seomra aisghabhála."
+      },
+      {
+        "title": "Ná deataigh",
+        "description": "Ná caith tobac le do thoil roimh an oibríocht."
+      },
+      {
+        "title": "Thuig gach rud?",
+        "description": "An bhfuil aon cheist agat nó an bhfuil rud éigin doiléir? Labhair le foireann an stáisiúin le do thoil. Beidh áthas orainn cabhrú leat."
       }
     ]
   },
@@ -2225,6 +2466,14 @@ export const translations = {
       {
         "title": "kamra tal-irkupru",
         "description": "Wara l-operazzjoni, inti tkun immonitorjat fil-kamra ta 'rkupru."
+      },
+      {
+        "title": "Tpejjipx",
+        "description": "Jekk jogħġbok tpejjipx qabel l-operazzjoni."
+      },
+      {
+        "title": "Fhimt kollox?",
+        "description": "Għandek xi mistoqsijiet jew xi ħaġa mhux ċara? Jekk jogħġbok kellem lill-istaff tal-istazzjon. Inkunu kuntenti li ngħinuk."
       }
     ]
   },
@@ -2301,6 +2550,14 @@ export const translations = {
       {
         "title": "Erhuelung Sall",
         "description": "No der Operatioun wäert Dir am Erhuelungsraum iwwerwaacht ginn."
+      },
+      {
+        "title": "Fëmmen net",
+        "description": "Fëmmt w.e.g. net virun der Operatioun."
+      },
+      {
+        "title": "Alles verstanen?",
+        "description": "Hutt Dir Froen oder ass eppes Onkloer? Schwätzt w.e.g. mam Personal vun der Gare. Mir wäerten frou Iech ze hëllefen."
       }
     ]
   },
@@ -2377,6 +2634,14 @@ export const translations = {
       {
         "title": "bataherbergi",
         "description": "Eftir aðgerðina verður fylgst með þér á batastofunni."
+      },
+      {
+        "title": "Ekki reykja",
+        "description": "Vinsamlegast ekki reykja fyrir aðgerð."
+      },
+      {
+        "title": "Skilurðu allt?",
+        "description": "Hefur þú einhverjar spurningar eða er eitthvað óljóst? Vinsamlegast talaðu við starfsfólk stöðvarinnar. Við munum vera fús til að hjálpa þér."
       }
     ]
   },
@@ -2453,6 +2718,14 @@ export const translations = {
       {
         "title": "utvinningsrom",
         "description": "Etter operasjonen vil du bli overvåket på oppvåkningsrommet."
+      },
+      {
+        "title": "Ikke røyk",
+        "description": "Vennligst ikke røyk før operasjonen."
+      },
+      {
+        "title": "forstått alt?",
+        "description": "Har du spørsmål eller er noe uklart? Snakk med personalet på stasjonen. Vi hjelper deg gjerne."
       }
     ]
   },
@@ -2529,6 +2802,14 @@ export const translations = {
       {
         "title": "кімната відновлення",
         "description": "Після операції ви будете перебувати під наглядом у реанімаційному відділенні."
+      },
+      {
+        "title": "Не палити",
+        "description": "Будь ласка, не куріть перед операцією."
+      },
+      {
+        "title": "Все зрозумів?",
+        "description": "У вас є запитання чи щось незрозуміло? Будь ласка, зверніться до персоналу вокзалу. Ми будемо раді Вам допомогти."
       }
     ]
   },
@@ -2605,6 +2886,14 @@ export const translations = {
       {
         "title": "послеоперационная палата",
         "description": "После операции за вами будут наблюдать в послеоперационной палате."
+      },
+      {
+        "title": "Не курить",
+        "description": "Пожалуйста, не курите перед операцией."
+      },
+      {
+        "title": "Все понял?",
+        "description": "Есть вопросы или что-то неясно? Пожалуйста, поговорите с сотрудниками станции. Мы будем рады помочь вам."
       }
     ]
   },
@@ -2681,6 +2970,14 @@ export const translations = {
       {
         "title": "iyileşme odası",
         "description": "Ameliyattan sonra derlenme odasında izleneceksiniz."
+      },
+      {
+        "title": "Sigara içme",
+        "description": "Lütfen operasyondan önce sigara içmeyiniz."
+      },
+      {
+        "title": "Her şeyi anladın mı?",
+        "description": "Herhangi bir sorunuz mu var veya belirsiz bir şey mi var? Lütfen istasyon personeliyle konuşun. Size yardımcı olmaktan mutluluk duyarız."
       }
     ]
   },
@@ -2757,6 +3054,14 @@ export const translations = {
       {
         "title": "غرفة الإنعاش",
         "description": "بعد العملية، سيتم مراقبتك في غرفة الإنعاش."
+      },
+      {
+        "title": "لا تدخن",
+        "description": "يرجى عدم التدخين قبل العملية."
+      },
+      {
+        "title": "فهمت كل شيء؟",
+        "description": "هل لديك أي أسئلة أو هل هناك شيء غير واضح؟ يرجى التحدث إلى موظفي المحطة. سنكون سعداء بمساعدتك."
       }
     ]
   },
@@ -2833,6 +3138,14 @@ export const translations = {
       {
         "title": "dhomë shërimi",
         "description": "Pas operacionit, do të monitoroheni në dhomën e rikuperimit."
+      },
+      {
+        "title": "Mos pini duhan",
+        "description": "Ju lutemi mos pini duhan para operacionit."
+      },
+      {
+        "title": "Kuptove gjithçka?",
+        "description": "Keni ndonjë pyetje apo është diçka e paqartë? Ju lutemi flisni me stafin e stacionit. Ne do të jemi të lumtur t'ju ndihmojmë."
       }
     ]
   },
@@ -2909,6 +3222,14 @@ export const translations = {
       {
         "title": "соба за опоравување",
         "description": "По операцијата, ќе бидете надгледувани во просторијата за опоравување."
+      },
+      {
+        "title": "Не пуши",
+        "description": "Ве молиме не пушете пред операцијата."
+      },
+      {
+        "title": "Разбравте сè?",
+        "description": "Дали имате прашања или нешто е нејасно? Ве молиме разговарајте со персоналот на станицата. Со задоволство ќе ви помогнеме."
       }
     ]
   },
@@ -2985,6 +3306,14 @@ export const translations = {
       {
         "title": "აღდგენის ოთახი",
         "description": "ოპერაციის შემდეგ მონიტორინგს გაგიწევთ სარეაბილიტაციო ოთახში."
+      },
+      {
+        "title": "არ მოწიოთ",
+        "description": "გთხოვთ, ოპერაციამდე არ მოწიოთ."
+      },
+      {
+        "title": "გაიგე ყველაფერი?",
+        "description": "გაქვთ რაიმე შეკითხვა ან რამე გაუგებარია? გთხოვთ დაელაპარაკეთ სადგურის თანამშრომლებს. მოხარული ვიქნებით დაგეხმაროთ."
       }
     ]
   },
@@ -3061,6 +3390,14 @@ export const translations = {
       {
         "title": "վերականգնման սենյակ",
         "description": "Վիրահատությունից հետո ձեզ կվերահսկեն վերականգնողական սենյակում։"
+      },
+      {
+        "title": "Մի ծխեք",
+        "description": "Խնդրում ենք վիրահատությունից առաջ չծխել։"
+      },
+      {
+        "title": "Հասկացա՞ր ամեն ինչ։",
+        "description": "Հարցեր ունե՞ք, թե ինչ-որ բան անհասկանալի է: Խնդրում եմ խոսեք կայանի անձնակազմի հետ: Մենք ուրախ կլինենք օգնել ձեզ:"
       }
     ]
   },
@@ -3137,6 +3474,14 @@ export const translations = {
       {
         "title": "bərpa otağı",
         "description": "Əməliyyatdan sonra reanimasiya otağında nəzarətdə olacaqsınız."
+      },
+      {
+        "title": "Siqaret çəkməyin",
+        "description": "Zəhmət olmasa əməliyyatdan əvvəl siqaret çəkməyin."
+      },
+      {
+        "title": "Hər şeyi başa düşdün?",
+        "description": "Hər hansı bir sualınız var və ya bir şey aydın deyil? Zəhmət olmasa stansiya işçiləri ilə danışın. Biz sizə kömək etməkdən məmnun olarıq."
       }
     ]
   },
@@ -3213,6 +3558,14 @@ export const translations = {
       {
         "title": "пакой аднаўлення",
         "description": "Пасля аперацыі вы будзеце знаходзіцца пад наглядам у рэанімацыйным пакоі."
+      },
+      {
+        "title": "Не курыць",
+        "description": "Калі ласка, не паліце ​​перад аперацыяй."
+      },
+      {
+        "title": "Усё зразумеў?",
+        "description": "У вас ёсць пытанні ці нешта незразумела? Калі ласка, звярніцеся да персаналу станцыі. Мы будзем рады вам дапамагчы."
       }
     ]
   },
@@ -3289,6 +3642,14 @@ export const translations = {
       {
         "title": "sala de recuperació",
         "description": "Després de l'operació, se us farà un seguiment a la sala de recuperació."
+      },
+      {
+        "title": "No fumeu",
+        "description": "Si us plau, no fumeu abans de l'operació."
+      },
+      {
+        "title": "Ho ha entès tot?",
+        "description": "Tens alguna pregunta o no estàs clar? Si us plau, parleu amb el personal de l'estació. Estarem encantats d'ajudar-te."
       }
     ]
   },
@@ -3365,6 +3726,14 @@ export const translations = {
       {
         "title": "соба за опоравак",
         "description": "Након операције, бићете под надзором у соби за опоравак."
+      },
+      {
+        "title": "Не пушите",
+        "description": "Молимо вас да не пушите пре операције."
+      },
+      {
+        "title": "Све разумео?",
+        "description": "Имате ли питања или вам нешто није јасно? Молимо разговарајте са особљем станице. радо ћемо вам помоћи."
       }
     ]
   }
