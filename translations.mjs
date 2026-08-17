@@ -247,6 +247,10 @@ export const languages = [
   }
 ];
 
+// Display order keeps the source illustration/text index stable while moving
+// the toilet reminder before transfer into the operating room.
+export const stepOrder = [0, 1, 8, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14];
+
 export const translations = {
   "de": {
     "ui": {
@@ -268,35 +272,35 @@ export const translations = {
       },
       {
         "title": "Umziehen",
-        "description": "Bitte ziehen Sie sich für den OP um."
+        "description": "Bitte ziehen Sie Ihre Privatkleidung aus und die bereitgestellte OP-Kleidung an."
       },
       {
-        "title": "Einschleusen",
-        "description": "Sie werden sicher für den OP vorbereitet."
+        "title": "Umlagern auf den OP-Tisch",
+        "description": "Das OP-Team lagert Sie sicher von Ihrem Bett auf den OP-Tisch um."
       },
       {
         "title": "Abfragen",
         "description": "Das OP-Team stellt Ihnen wichtige Fragen."
       },
       {
-        "title": "Essen",
-        "description": "Das Team fragt, ob Sie etwas gegessen haben."
+        "title": "Nüchtern bleiben – Essen",
+        "description": "Sie dürfen vor der Operation nichts essen. Das Team fragt, wann Sie zuletzt etwas gegessen haben."
       },
       {
-        "title": "Trinken",
-        "description": "Das Team fragt, ob Sie etwas getrunken haben."
+        "title": "Nüchtern bleiben – Trinken",
+        "description": "Sie dürfen ab dem von der Klinik genannten Zeitpunkt nichts mehr trinken. Das Team fragt, wann Sie zuletzt etwas getrunken haben."
       },
       {
-        "title": "Schmuck und Implantate",
-        "description": "Das Team fragt nach Schmuck und Implantaten."
+        "title": "Schmuck, Hilfsmittel und Implantate",
+        "description": "Bitte legen Sie Schmuck, Piercings und lose Hilfsmittel wie Brille und Hörgeräte vor der Operation ab. Informieren Sie das Team über vorhandene Implantate."
       },
       {
         "title": "Zahnprothese",
-        "description": "Das Team fragt nach einer Zahnprothese."
+        "description": "Bitte nehmen Sie eine herausnehmbare Zahnprothese vor der Operation heraus."
       },
       {
-        "title": "Vor dem OP",
-        "description": "Vor dem OP können Sie noch zur Toilette gehen."
+        "title": "Toilette vor dem Transport",
+        "description": "Bitte gehen Sie vor dem Transport in den OP noch einmal zur Toilette."
       },
       {
         "title": "Einleitung",
@@ -315,8 +319,8 @@ export const translations = {
         "description": "Ihre Körperfunktionen werden überwacht."
       },
       {
-        "title": "Einschlafen",
-        "description": "Die Narkose wird eingeleitet."
+        "title": "Sauerstoff und Narkosebeginn",
+        "description": "Zunächst atmen Sie über die Maske Sauerstoff ein; dabei sind Sie noch wach. Danach erhalten Sie die Medikamente zum Einschlafen über die Venenverweilkanüle (Braunüle)."
       },
       {
         "title": "Aufwachraum",

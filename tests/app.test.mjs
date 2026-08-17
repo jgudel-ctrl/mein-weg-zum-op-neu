@@ -48,6 +48,29 @@ test('erzeugt die Sprachwahl dynamisch und unterstützt Suche', () => {
   assert.match(source, /document\.documentElement\.dir/);
 });
 
+test('startet bei jedem normalen Aufruf mit der Sprachauswahl', () => {
+  const source = app();
+  assert.doesNotMatch(source, /savedLanguage/);
+  assert.match(source, /renderLanguages\(\);/);
+});
+
+test('bildet das klinische Inhaltsfeedback in Deutsch und der Reihenfolge ab', async () => {
+  const i18n = await import(`../translations.mjs?feedback=${Date.now()}`);
+  assert.deepEqual(i18n.stepOrder, [0, 1, 8, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14]);
+  const steps = i18n.translations.de.steps;
+  assert.equal(steps[1].description, 'Bitte ziehen Sie Ihre Privatkleidung aus und die bereitgestellte OP-Kleidung an.');
+  assert.match(steps[2].description, /OP-Tisch.*um/);
+  assert.match(steps[4].description, /vor der Operation nichts essen/);
+  assert.match(steps[5].description, /genannten Zeitpunkt nichts mehr trinken/);
+  assert.match(steps[6].description, /Piercings/);
+  assert.match(steps[6].description, /Implantate/);
+  assert.match(steps[7].description, /Zahnprothese.*heraus/);
+  assert.match(steps[8].description, /vor dem Transport.*Toilette/);
+  assert.match(steps[13].description, /Zunächst.*Sauerstoff/);
+  assert.match(steps[13].description, /Venenverweilkanüle/);
+  assert.match(app(), /translationNote\.hidden = selected\.code === "de"/);
+});
+
 test('verwendet die neue Wegkarten-Navigation', () => {
   assert.match(html(), /id="route-map"/);
   assert.match(html(), /id="route-points"/);

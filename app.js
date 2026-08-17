@@ -1,4 +1,4 @@
-import { languages, translations } from "./translations.mjs";
+import { languages, stepOrder, translations } from "./translations.mjs";
 
 const languageScreen = document.querySelector("#language-screen");
 const readerScreen = document.querySelector("#reader-screen");
@@ -79,10 +79,11 @@ function renderRoute() {
 function render() {
   const selected = languages.find(({ code }) => code === language) ?? languages[0];
   const { ui, steps } = translations[selected.code];
-  const item = steps[currentStep];
+  const sourceStep = stepOrder[currentStep];
+  const item = steps[sourceStep];
   document.documentElement.lang = selected.code;
   document.documentElement.dir = selected.dir;
-  image.src = `assets/step-${String(currentStep + 1).padStart(2, "0")}.webp`;
+  image.src = `assets/step-${String(sourceStep + 1).padStart(2, "0")}.webp`;
   image.alt = `${ui.step} ${currentStep + 1}: ${item.title}`;
   imageBadge.textContent = String(currentStep + 1).padStart(2, "0");
   title.textContent = item.title;
@@ -98,8 +99,8 @@ function render() {
   nextButton.querySelector("span").textContent = currentStep === 14 ? ui.finish : ui.next;
   previousButton.disabled = currentStep === 0;
   nextButton.classList.toggle("is-finish", currentStep === 14);
-  translationNote.hidden = false;
-  translationNote.textContent = selected.code === "de" ? "Hinweis: Die Illustrationen und zusätzlichen Texte müssen vor dem klinischen Einsatz medizinisch freigegeben werden." : ui.note;
+  translationNote.hidden = selected.code === "de";
+  translationNote.textContent = ui.note;
   updateUrl();
 }
 
@@ -163,7 +164,3 @@ window.addEventListener("popstate", () => {
 
 renderLanguages();
 currentStep = stepFromUrl();
-const urlLanguage = new URLSearchParams(location.search).get("lang");
-const savedLanguage = localStorage.getItem("mein-weg-zum-op-language");
-const initialLanguage = translations[urlLanguage] ? urlLanguage : savedLanguage;
-if (translations[initialLanguage]) openReader(initialLanguage);
